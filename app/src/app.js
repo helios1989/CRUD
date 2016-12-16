@@ -1,5 +1,7 @@
+import template from './app.html'
+
 const AppComponent = {
-  template: `<h1>Hola mundo</h1>`
+  template
 }
 
 export default AppComponent
