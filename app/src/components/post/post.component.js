@@ -1,7 +1,9 @@
 import template from './post.html'
+import controller from './post.controller'
 
 const PostComponent = {
-  template
+  template,
+  controller
 }
 
 export default PostComponent

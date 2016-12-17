@@ -6,3 +6,5 @@ const PostItemComponent = {
   },
   template
 }
+
+export default PostItemComponent
