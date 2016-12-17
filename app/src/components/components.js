@@ -10,23 +10,14 @@ const components = angular
     $stateProvider
       .state('home', {
         url: '/',
-        template: '<main-app></main-app>'//otra version
+        component: 'mainApp'//otra version
       })
       .state('about', {
         url: '/about',
-        template: '<about-app></about-app>'//otra version
+        component: 'aboutApp'//otra version
       })
 
-
     $urlRouterProvider.otherwise('/')
-  })
-  .run(($rootScope, $state, $stateParams) => {
-    console.log($state.is('about'));
-    console.log($state.includes('home'));
-    console.log($state);
-    console.log($state.current);
-    $rootScope.$state = $state   
-    $rootScope.$stateParams = $stateParams 
   })
   .name
 

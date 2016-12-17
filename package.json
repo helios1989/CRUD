@@ -23,7 +23,7 @@
   "homepage": "https://github.com/jersonbetin/JSONPlaceholder-angular-es6#readme",
   "dependencies": {
     "angular": "^1.6.0",
-    "angular-ui-router": "^0.3.2",
+    "angular-ui-router": "^1.0.0-alpha.5",
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {

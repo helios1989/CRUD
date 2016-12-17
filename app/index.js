@@ -12,3 +12,12 @@ angular
     components
   ])
   .component('root', AppComponent)
+  
+  /*.run(($rootScope, $state, $stateParams) => {
+    console.log($state.includes('about'));
+    console.log($state.includes('home'));
+    console.log($state);
+    console.log($state.$urlRouter.location);
+    $rootScope.$state = $state   
+    $rootScope.$stateParams = $stateParams 
+  })*/
