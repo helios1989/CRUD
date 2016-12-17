@@ -19,6 +19,7 @@ module.exports = {
       { test: /\.html$/, loader: 'raw' },
       //{ test: /\.html$/, loader: "html-loader" },
       { test: /\.css$/, loader: 'style!css' },
+      { test: /\.scss$/, loader: 'style!css!sass' },
       { test: /\.styl$/, loader: 'style!css!stylus' },
       { test: /\.(ttf|otf|eot|svg|woff(2)?)$/, loader: 'url' }
     ]

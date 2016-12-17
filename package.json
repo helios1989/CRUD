@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/jersonbetin/JSONPlaceholder-angular-es6#readme",
   "dependencies": {
-    "angular": "^1.6.0"
+    "angular": "^1.6.0",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
@@ -31,7 +33,10 @@
     "css-loader": "^0.26.1",
     "html-loader": "^0.4.4",
     "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^4.0.0",
     "raw-loader": "^0.5.1",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
     "webpack": "^1.14.0",
