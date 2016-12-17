@@ -1,9 +1,12 @@
 import angular from 'angular'
 import main from './main/main.component'
 import about from './about/about.component'
+import post from  './post'
 
 const components = angular
-  .module('app.components',[])
+  .module('app.components',[
+    post
+  ])
   .component('mainApp', main)
   .component('aboutApp', about)
   .config(($stateProvider, $urlRouterProvider) => {
