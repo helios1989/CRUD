@@ -1,4 +1,6 @@
 <div class="container">
   <h1 class="text-center">List Posts</h1>
-  <post-item ng-repeat="post in $ctrl.posts" post="post"></post-item>
+  <post-item ng-repeat="post in $ctrl.posts | startFromGrid: $ctrl.currentPage * $ctrl.pageSize | limitTo: $ctrl.pageSize" post="post"></post-item>
+  <pagination current-page = "$ctrl.currentPage" set-page = "$ctrl.setPage(index)" pages = "$ctrl.pages" page-size = "$ctrl.pageSize" numposts = "$ctrl.posts.length">
+  </pagination>
 </div>

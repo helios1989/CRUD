@@ -21,7 +21,7 @@ const components = angular
       })
       .state('posts', {
         url: '/posts',
-        component: 'postApp'//otra version
+        component: 'postApp',//otra version
       })
 
     $urlRouterProvider.otherwise('/')
