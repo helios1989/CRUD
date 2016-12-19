@@ -5,6 +5,7 @@ import PostItemComponent from './post-item/post-item.component'
 import PaginationComponent from './pagination/pagination.component'
 
 import PostService from './post.service'
+import PaginationFilter from  './pagination/pagination.filter'
 
 const post = angular
   .module('post.app', [])
@@ -12,16 +13,7 @@ const post = angular
   .component('postItem', PostItemComponent)
   .component('pagination', PaginationComponent)
   .service('PostService', PostService)
-  .filter('startFromGrid', () =>{
-    return (input, start) => {
-      console.log(start)
-      console.log('primero',input)
-      console.log(' segundo',input.slice(start))
-      console.log(input.slice(start).length)
-      start =+ start
-      return input.slice(start)
-    }
-  })
+  .filter('startFromGrid', PaginationFilter)
   .name
 
 export default post
