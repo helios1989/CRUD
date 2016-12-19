@@ -1,0 +1,30 @@
+<div class="container">
+  <center><h1>New Post</h1></center>
+  <div class="content">
+    <div class="row">      
+      <form  ng-submit="$ctrl.savePost()" class="form-horizontal col-lg-offset-3 col-lg-6 m-t-l" role="form">
+        <input type="hidden" ng-value="$ctrl.post.user = 1">
+        <div class="form-group">
+          <label for="title" class="col-lg-1 control-label"><span class="pull-right">Title</span></label>
+          <div class="col-lg-11">            
+            <input type="text" name="title" id="title" class="form-control" placeholder="Title" ng-model="$ctrl.post.title">
+          </div>
+        </div>  
+        <div class="form-group">
+          <label for="body" class="col-lg-1 control-label"><span class="pull-right">Body</span></label>
+          <div class="col-lg-11">            
+            <textarea name="title" id="body" class="form-control" style="height: 400px;" placeholder="Body"  ng-model="$ctrl.post.body"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-4">
+            <button type="submit" class="btn btn-primary col-lg-12" >Save</button>
+          </div>
+          <div class="col-lg-4">
+            <button type="reset" class="btn btn-default col-lg-12" >Clear</button>
+          </div>
+        </div>  
+      </form>
+    </div>    
+  </div>
+</div>

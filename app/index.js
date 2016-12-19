@@ -4,6 +4,7 @@ import uiRouter from 'angular-ui-router'
 import AppComponent from './src/app';
 import common from './src/common/common'
 import components from './src/components/components'
+import router from './router'
 
 angular
   .module('app', [
@@ -12,6 +13,7 @@ angular
     components
   ])
   .component('root', AppComponent)
+  .config(router)
   
   /*.run(($rootScope, $state, $stateParams) => {
     console.log($state.includes('about'));

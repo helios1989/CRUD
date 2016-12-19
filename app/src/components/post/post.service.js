@@ -2,7 +2,6 @@ class PostService {
   constructor($http){
     'ngInject'
     this.$http = $http;
-    this.posts = []
   }
 
   seachPosts(){
@@ -12,6 +11,14 @@ class PostService {
 
   findPost(id){
     return this.$http.get(`http://jsonplaceholder.typicode.com/posts/${id}`)
+  }
+
+  savePost(post = {}){
+    return this.$http({
+      method:'post',
+      url:'http://jsonplaceholder.typicode.com/posts',
+      data: post
+    })
   }
 }
 

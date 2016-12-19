@@ -1,19 +1,16 @@
 import angular from 'angular'
 
-import PostComponent from './post.component'
-import PostItemComponent from './post-item/post-item.component'
-import PaginationComponent from './pagination/pagination.component'
-
 import PostService from './post.service'
-import PaginationFilter from  './pagination/pagination.filter'
 
-const post = angular
-  .module('post.app', [])
-  .component('postApp', PostComponent)
-  .component('postItem', PostItemComponent)
-  .component('pagination', PaginationComponent)
+import listPost from './list'
+import CreatePost from './create'
+
+const posts = angular
+  .module('posts.app', [
+    listPost,
+    CreatePost
+  ])
   .service('PostService', PostService)
-  .filter('startFromGrid', PaginationFilter)
   .name
 
-export default post
+export default posts
