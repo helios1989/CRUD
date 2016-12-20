@@ -18,6 +18,24 @@ class PostController {
     })
   }
 
+  removePost(id){
+    this.postService.deletePost(id)
+      .then((data) => {
+        console.log(data)
+        if(data.status === 200){
+          
+          alert('Post eliminado con exito')
+          //window.location.href = '#!/posts'
+        }else{
+          alert('problemas al eliminar post')
+          console.log(data)
+        }
+      })
+      .catch(error => {
+        alert(error)
+      });
+  }
+
   paginationConfig(){
     //this.pages.length = 0
     const numPosts = this.posts.length 

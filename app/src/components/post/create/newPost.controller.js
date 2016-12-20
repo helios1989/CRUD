@@ -57,7 +57,6 @@ class NewPostController {
         console.log(data)
         if(data.status === 200){
           alert('Post guardado con exito')
-          this.post = {}
           //window.location.href = '#!/posts'
         }else{
           alert('problemas al guardar post')

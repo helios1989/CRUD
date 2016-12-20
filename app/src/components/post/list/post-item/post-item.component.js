@@ -2,7 +2,8 @@ import template from './post-item.html'
 
 const PostItemComponent = {
   bindings:{
-    post: '<'
+    post: '<',
+    removePost: '&'
   },
   template
 }

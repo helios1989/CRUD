@@ -28,6 +28,13 @@ class PostService {
       data: post
     })
   }
+
+  deletePost(id){
+    return this.$http({
+      method:'delete',
+      url:`http://jsonplaceholder.typicode.com/posts/${id}`
+    })
+  }
 }
 
 export default PostService
