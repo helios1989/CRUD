@@ -26,6 +26,10 @@ const router = ($stateProvider, $urlRouterProvider) => {
         isEdit:() => true
       }
     })
+    .state('comments', {
+      url: '/comments',
+      component: 'comments'
+    })
 
   $urlRouterProvider.otherwise('/')
 }
