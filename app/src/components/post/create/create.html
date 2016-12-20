@@ -2,8 +2,8 @@
   <center><h1>{{ $ctrl.isEdit ?  'Edit' : 'New' }} Post </h1></center>:
   <div class="content">
     <div class="row">      
-      <form  ng-submit="$ctrl.savePost()" class="form-horizontal col-lg-offset-3 col-lg-6 m-t-l" role="form">
-        <input type="hidden" ng-value="$ctrl.post.user = 1">
+      <form  ng-submit="$ctrl.actionPost()" class="form-horizontal col-lg-offset-3 col-lg-6 m-t-l" role="form">
+        <input type="hidden" ng-value="$ctrl.post.userId = 1">
         <div class="form-group">
           <label for="title" class="col-lg-1 control-label"><span class="pull-right">Title</span></label>
           <div class="col-lg-11">            
@@ -17,11 +17,11 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="col-lg-offset-2 col-lg-4">
-            <button type="submit" class="btn btn-primary col-lg-12" >Save</button>
+          <div class="col-lg-offset-2" ng-class="{ 'col-lg-4' : !$ctrl.isEdit, 'col-lg-8' : $ctrl.isEdit }">
+            <button type="submit" class="btn btn-primary col-lg-12" >{{ $ctrl.isEdit ?  'Edit' : 'Save' }}</button>
           </div>
-          <div class="col-lg-4">
-            <button type="reset" class="btn btn-default col-lg-12" >Clear</button>
+          <div class="col-lg-4"  ng-hide="$ctrl.isEdit">
+            <button type="reset" class="btn btn-default col-lg-12">Clear</button>
           </div>
         </div>  
       </form>

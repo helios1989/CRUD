@@ -6,8 +6,7 @@ const NewPost = {
   template,
   controller,
   bindings: {
-    isEdit: '<',
-    post: '='
+    isEdit: '<'
   }
 }
 

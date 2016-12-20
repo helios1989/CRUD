@@ -1,5 +1,3 @@
-import PostService from './src/components/post/post.service'
-
 const router = ($stateProvider, $urlRouterProvider) => {
   $stateProvider
     .state('home', {
@@ -18,14 +16,15 @@ const router = ($stateProvider, $urlRouterProvider) => {
       url: '/post',
       component: 'createPost',//otra version
       resolve: {
-        isEdit:() => false,
-        post: () => {}
+        isEdit:() => false
       }
     })
     .state('editPost', {
       url: '/post/:id',
       component: 'createPost',//otra version
-      resolve: {}
+      resolve: {
+        isEdit:() => true
+      }
     })
 
   $urlRouterProvider.otherwise('/')

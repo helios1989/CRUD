@@ -20,6 +20,14 @@ class PostService {
       data: post
     })
   }
+
+  editPost(post = {}){
+    return this.$http({
+      method:'put',
+      url:`http://jsonplaceholder.typicode.com/posts/${post.id}`,
+      data: post
+    })
+  }
 }
 
 export default PostService
