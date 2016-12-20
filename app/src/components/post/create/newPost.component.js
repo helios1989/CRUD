@@ -4,7 +4,11 @@ import controller from './newPost.controller'
 
 const NewPost = {
   template,
-  controller
+  controller,
+  bindings: {
+    isEdit: '<',
+    post: '='
+  }
 }
 
 export default NewPost
