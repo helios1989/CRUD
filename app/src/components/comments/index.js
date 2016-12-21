@@ -1,11 +1,13 @@
 import angular from 'angular'
 
-import CommentsComponent from './list/comments.component'
+import CommentService from './comment.service'
+import ListComments from './list'
 
 const comments = angular
   .module('comments.app', [
+    ListComments
   ])
-  .component('comments', CommentsComponent)
+  .service('CommentService', CommentService)
   .name
 
 export default comments

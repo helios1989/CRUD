@@ -8,3 +8,5 @@ class CommentService {
     return this.$http.get('http://jsonplaceholder.typicode.com/comments');
   }
 }
+
+export default CommentService

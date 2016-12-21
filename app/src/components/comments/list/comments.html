@@ -1,1 +1,7 @@
-<h1>hola mundo</h1>
+<div class="container">
+  <h1 class="text-center">List Posts</h1>
+  <div infinite-scroll = "$ctrl.loadScroll()" infinite-scroll-disabled='!$ctrl.isScroll'>
+    <item-comment ng-repeat="item in $ctrl.items" comment = "item">    
+    </item-comment>
+  </div>
+</div>

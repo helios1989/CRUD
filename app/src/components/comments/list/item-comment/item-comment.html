@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{ $ctrl.comment.name }} : <b>{{ $ctrl.comment.email }} </b></div>
+  <div class="panel-body">
+    {{ $ctrl.comment.body }}
+  </div>
+  <div class="panel-footer">    
+    <div class="btn-group" role="group" aria-label="basic example">
+      <a href="#!/comment/{{$ctrl.comment.id}}" class="btn btn-primary">Show</a>
+      <a href="#!/comment/{{$ctrl.comment.id}}" class="btn btn-info">Edit</a>
+      <a ng-click="" class="btn btn-danger">Remove</a>   
+    </div>
+  </div>
+</div>

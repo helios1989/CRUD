@@ -28,7 +28,7 @@ const router = ($stateProvider, $urlRouterProvider) => {
     })
     .state('comments', {
       url: '/comments',
-      component: 'comments'
+      component: 'comments',      
     })
 
   $urlRouterProvider.otherwise('/')
