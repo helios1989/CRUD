@@ -2,7 +2,9 @@
 Proyect angular with es6 and JSONPlaceholder api
 
 ## Demo
-![img/anim.gif][1]
+![anim.gif][1]
+
+[1]: app.gif "Demo"
 
 ##Installation
 ```shell
