@@ -2,6 +2,15 @@ class PostService {
   constructor($http){
     'ngInject'
     this.$http = $http;
+    this.prueba = 2
+  }
+
+  setPrueba(value ){
+    this.prueba = value
+  }
+
+  getPrueba(){
+    return this.prueba
   }
 
   seachPosts(){

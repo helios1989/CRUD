@@ -7,7 +7,7 @@ class NewPostController {
   }
 
   $onInit(){
-    console.log(this.$stateParams.id !== undefined )
+    console.log(this.$stateParams.id !== undefined)
     if(this.$stateParams.id !== undefined && this.$stateParams.id !== 'undefined' && this.$stateParams.id !== null){
       console.log('entro')
       this.postService.findPost(this.$stateParams.id)

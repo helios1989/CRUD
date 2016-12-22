@@ -10,6 +10,7 @@ class CommentsController {
   $onInit(){
     this.commentService.search()
       .then((response) => {
+        console.log(response.data.length)
         this.comments = response.data
         this.isScroll = true
         let arrayTest = this.comments
